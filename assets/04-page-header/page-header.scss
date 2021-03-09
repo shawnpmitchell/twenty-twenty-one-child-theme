@@ -1,0 +1,115 @@
+//Styles for Page Header
+
+@use "../02-global/global.scss";
+
+//screen reader styles
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
+
+.skip-link:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+//Masthead Styles
+.dest-page-margin-gold {
+    background-color: global.$gold;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+#masthead {
+    border: 1px solid purple;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.site-title-wrapper {
+    display: grid;
+}
+
+// Primary Nav Menu
+
+.menu-icon-wrapper {
+    border: 1px solid red;
+    display: inline-block;
+    margin: 0 20px 0px 10px;
+}
+
+.nav-menu-icon-text {
+    font-size: global.$font-size-small;
+    border: 1px solid pink;
+}
+.dest-menu-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid blue;
+
+}
+
+//Site Title & Description
+
+.dest-site-title-link,
+.dest-site-title-link:visited {
+    text-transform: uppercase;
+    color: global.$text-color;
+    text-decoration: none;
+    font-family: global.$font-stack;
+    font-weight: 700;
+    font-size: global.$font-size-large;
+    border: 1px solid cyan;
+    display: block;
+    padding: 0px;
+    line-height: 1;
+}
+
+.dest-site-title-link:hover,
+.dest-site-title-link:focus {
+    text-decoration: underline;
+    color: global.$dark-grey;
+}
+
+.dest-site-title-link:active {
+    text-decoration: none;
+    color: global.$gold;
+}
+
+.dest-site-description {
+    font-size: global.$font-size-normal;
+    font-weight: 300;
+    border: 1px solid orange;
+    display: block;
+    line-height: 1;
+}
+
+.with-site-description {
+    font-size: global.$font-size-small;
+}
