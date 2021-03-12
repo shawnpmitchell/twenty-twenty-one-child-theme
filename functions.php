@@ -13,4 +13,6 @@ function spm_enqueue_styles() {
         array( 'twenty-twenty-one-style' ), 
         wp_get_theme()->get('Version') // this only works if you have Version in the style header
     );
+    
+    wp_enqueue_style('spm-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 }

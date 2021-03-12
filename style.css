@@ -10,5 +10,15 @@
  License URI: https://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: twentytwentyonechild
 */
+.site-title {
+  font-weight: 100 !important;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+.site-title a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */
